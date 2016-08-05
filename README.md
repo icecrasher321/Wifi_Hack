@@ -25,7 +25,7 @@ go run wifi_hack.go
 ```
 Functionality
 -----------
-The program will run in the background (do not close the terminal window) and automatically turn off and on your wifi every 20 minutes. Future versions will let the user set the time period.
+The program will run in the background (do not close the terminal window) and automatically turn off and on your wifi every 20 minutes. Future versions will detect packet drops to activate the wifi reset process.
 
 License
 ------
