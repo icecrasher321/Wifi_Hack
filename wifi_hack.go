@@ -8,9 +8,12 @@ import (
 )
 
 func main() {
+  var timeInt int
+  fmt.Println("Enter the time interval (whole number - in minutes >= 1) between each wifi reset")
+  fmt.Scanln(&timeInt)
   fmt.Println("Wifi connection being monitored.....")
   for {
-  time.Sleep(20 * time.Minute)
+  time.Sleep(time.Duration(timeInt) * time.Minute)
   wifiControl("off")
   time.Sleep(3 * time.Second)
   wifiControl("on")
